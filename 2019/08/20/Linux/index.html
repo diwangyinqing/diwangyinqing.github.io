@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>Linux����ָ�� | Hexo</title>
+  <title>Linux基础指令 | Hexo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <link rel="manifest" href="/manifest.json">
@@ -105,16 +105,16 @@
     <!--采用相对的时间或者绝对的时间，默认相对-->
 
 <div class="article-date">
-  	<time datetime="2019-08-20T00:23:18.137Z" itemprop="datePublished">
+  	<time datetime="2019-08-20T00:47:50.101Z" itemprop="datePublished">
   	
   	
   	
   	
   	
     
-          
       
       
+         
         
     
     
@@ -139,7 +139,7 @@
   		
   	
   	
-  	22minutesago
+  	1minuteago
 
 
   
@@ -159,7 +159,7 @@ read time: 3分钟
         
   
     <h1 class="article-title" itemprop="name">
-      Linux����ָ��
+      Linux基础指令
     </h1>
   
 
@@ -167,28 +167,28 @@ read time: 3分钟
     
     <div class="article-entry" itemprop="articleBody">
       
-        <center><font face="΢���ź�" color="red" size="20"> **Linux**</font><font size="5">�Ļ���ָ��</font><p></p></center>
-##**Ŀ¼**
+        <center><font face="微软雅黑" color="red" size="20"> **Linux**</font><font size="5">的基础指令</font><p></p></center>
+##**目录**
 <div style="color:#00F00  ;height:500px ;width:200px ;background:#CEF6EC ">
- 1. lsָ��<br>
+ 1. ls指令<br>
  --------------------------------------
- 2. pwdָ��<br>
+ 2. pwd指令<br>
   --------------------------------------
- 3. cdָ��<br>
+ 3. cd指令<br>
   --------------------------------------
- 4. mkdirָ��<br>
+ 4. mkdir指令<br>
  --------------------------------------
- 5. touchָ��<br>
+ 5. touch指令<br>
  --------------------------------------
- 6. mvָ��<br>
+ 6. mv指令<br>
  --------------------------------------
- 7. rmָ��<br>
+ 7. rm指令<br>
  --------------------------------------
- 8. cpָ��<br>
+ 8. cp指令<br>
  --------------------------------------
- 9. catָ��<br>
+ 9. cat指令<br>
  --------------------------------------
- 10. ����ض���<br>
+ 10. 输出重定向<br>
 
 
 
@@ -197,32 +197,32 @@ read time: 3分钟
 
 <hr>
 <ul>
-<li>###*<em>1 .  lsָ�� *</em> <blockquote>
-<p>���ã��г�ָ��·���µ��ļ�/�ļ��е�����     ls��list��<br>�﷨��#ls   ѡ��  ·��<br>����ѡ�-l  -a   -h<br>1��#ls        &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp &amp;nbsp&amp;nbsp&amp;nbsp �г���ǰ����·���µ������ļ�/�ļ��е�����<br>2��#ls -l    ·��    &amp;nbsp&amp;nbsp&amp;nbsp  ���б�����ʽ�г�ָ���Ĺ���·���µ������ļ�/�ļ��е�����<br>3��#ls -la  ·��&amp;nbsp&amp;nbsp&amp;nbsp  ���б�����ʽ�г�ָ���Ĺ���·���µ������ļ�/�ļ��е����� ���������ļ�<br>4��#ls -lh  ·��&amp;nbsp&amp;nbsp&amp;nbsp ���б��Ϳɶ��Ը��ߵ���ʽ�г�ָ���Ĺ���·���µ������ļ�/�ļ��е�����<br>5��#ls  ·�� &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp �г�ָ������·���µ������ļ�/�ļ��е�����</p>
+<li>###*<em>1 .  ls指令 *</em> <blockquote>
+<p>作用：列出指定路径下的文件/文件夹的名称     ls（list）<br>语法：#ls   选项  路径<br>常用选项：-l  -a   -h<br>1：#ls        &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp &amp;nbsp&amp;nbsp&amp;nbsp 列出当前工作路径下的所有文件/文件夹的名称<br>2：#ls -l    路径    &amp;nbsp&amp;nbsp&amp;nbsp  以列表的形式列出指定的工作路径下的所有文件/文件夹的名称<br>3：#ls -la  路径&amp;nbsp&amp;nbsp&amp;nbsp  以列表的形式列出指定的工作路径下的所有文件/文件夹的名称 包括隐藏文件<br>4：#ls -lh  路径&amp;nbsp&amp;nbsp&amp;nbsp 以列表和可读性更高的形式列出指定的工作路径下的所有文件/文件夹的名称<br>5：#ls  路径 &amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp 列出指定工作路径下的所有文件/文件夹的名称</p>
 </blockquote>
 </li>
 </ul>
 <ul>
-<li><p>###<strong>2 .  pwdָ��</strong> </p>
+<li><p>###<strong>2 .  pwd指令</strong> </p>
 <blockquote>
-<p>���ã���ӡ��ǰ�Ĺ���Ŀ¼ (print working directory����ӡ��ǰ����Ŀ¼)<br>�﷨��#pwd </p>
+<p>作用：打印当前的工作目录 (print working directory，打印当前工作目录)<br>语法：#pwd </p>
 </blockquote>
 </li>
-<li><p>###<strong>3 .  cdָ��</strong></p>
+<li><p>###<strong>3 .  cd指令</strong></p>
 <blockquote>
-<p>���ã������л���ǰ�Ĺ���Ŀ¼��<br>�﷨��#cd  ·��</p>
+<p>作用：用于切换当前的工作目录的<br>语法：#cd  路径</p>
 </blockquote>
 </li>
 </ul>
 <ul>
-<li>###<strong>4 . mkdirָ��</strong><blockquote>
-<p>���ã�����Ŀ¼<br>����ѡ�-p ������Ҫ����Ŀ¼���ϲ�Ŀ¼Ŀǰ��δ���������һ�������ϲ�Ŀ¼����<br>�﷨��#mkdir    ·�����ļ��е�����<br>1��mkdir  Linux123    �ڵ�ǰ�Ĺ���Ŀ¼����<br>2��mkdir  /root/linux123<br>3��mkdir  -p  /root/Linux/a/b/c/d</p>
+<li>###<strong>4 . mkdir指令</strong><blockquote>
+<p>作用：创建目录<br>常用选项：-p （若所要建立目录的上层目录目前尚未建立，则会一并建立上层目录；）<br>语法：#mkdir    路径或文件夹的名称<br>1：mkdir  Linux123    在当前的工作目录创建<br>2：mkdir  /root/linux123<br>3：mkdir  -p  /root/Linux/a/b/c/d</p>
 </blockquote>
 </li>
 </ul>
 <ul>
-<li>###<strong>5 . touchָ��</strong> <blockquote>
-<p>���ã����������µĿ��ļ�<br>�﷨��#touch �ļ�·�����ļ���<br>touchָ����Դ�������ļ�<br>1: #touch  text1.txt  text2.txt  text3.txt  </p>
+<li>###<strong>5 . touch指令</strong> <blockquote>
+<p>作用：用来创建新的空文件<br>语法：#touch 文件路径或文件名<br>touch指令可以创建多个文件<br>1: #touch  text1.txt  text2.txt  text3.txt  </p>
 </blockquote>
 </li>
 </ul>
