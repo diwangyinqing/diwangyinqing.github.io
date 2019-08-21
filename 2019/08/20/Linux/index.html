@@ -112,9 +112,9 @@
   	
   	
     
-          
       
       
+         
         
     
     
@@ -139,12 +139,12 @@
   		
   	
   	
-  	13小时以前发布
+  	1天以前发布
 
 
   
 <div>
-阅读时长: 3分钟
+阅读时长: 5分钟
 </div>
 </div>
 
@@ -180,11 +180,11 @@
  --------------------------------------<br>
  5. touch指令<br>
  --------------------------------------<br>
- 6. mv指令<br>
+ 6. cp指令<br>
  --------------------------------------<br>
- 7. rm指令<br>
+ 7. mv指令<br>
  --------------------------------------<br>
- 8. cp指令<br>
+ 8. rm指令<br>
  --------------------------------------<br>
  9. cat指令<br>
  --------------------------------------<br>
@@ -222,6 +222,23 @@
 <li><h3 id="5-touch指令"><a href="#5-touch指令" class="headerlink" title="5 . touch指令"></a><strong>5 . touch指令</strong></h3><blockquote>
 <p>作用：用来创建新的空文件<br>语法：#touch 文件路径或文件名<br>touch指令可以创建多个文件<br>1: #touch  text1.txt  text2.txt  text3.txt  </p>
 </blockquote>
+</li>
+<li><h3 id="6-cp指令"><a href="#6-cp指令" class="headerlink" title="6 .  cp指令"></a><strong>6 .  cp指令</strong></h3><blockquote>
+<p>作用：复制文件/文件夹到指定的位置     cp（copy）<br><br>语法：#cp   选项  被复制的文档路径 文档被复制到的路径  <br><br>常用选项：-r  <font face="微软雅黑" color="red" size="3">   (复制为文件夹时需添加，表示递归复制) </font> <br><br>1.#cp /root/linux123.txt /root/linux<br><br>2.#cp -r /root/linux /root/home</p>
+</blockquote>
+</li>
+<li><h3 id="7-mv指令"><a href="#7-mv指令" class="headerlink" title="7 .  mv指令"></a><strong>7 .  mv指令</strong></h3><blockquote>
+<p>作用：移动文件或文件夹到新的位置     mv（move）<br><br>语法：#mv   选项  需要移动的文档路径 文档保存到的路径  <br><br>常用选项: -b当文件存在时，覆盖前，为其创建一个备份；<br><br>1.#cp /root/Linux123.txt /linux123.txt<br><br>2.#cp /root/linux1 /linux1<br><br>补充：在Linux中重命名的命令也是mv，语法和移动语法一样。</p>
+</blockquote>
+</li>
+<li><h3 id="8-rm指令"><a href="#8-rm指令" class="headerlink" title="8 .  rm指令"></a><strong>8 .  rm指令</strong></h3><blockquote>
+<p>作用：删除文件或文件夹     rm（remove）<br><br>语法：#rm   选项  需要删除的文档路径 <br><br>常用选项: -r（表示递归）<br><br> -f：force，强制删除，不提示是否删除<br><br>1.#rm /root/Linux.txt (注：执行之后系统会提示是否删除’y’表示同意’n’不同意)<br><br>2.#rm -f /roo/linux1.txt <br><br>3.#rm -rf /root/linux123 </p>
+</blockquote>
+</li>
+<li><h3 id="9-cat指令"><a href="#9-cat指令" class="headerlink" title="9 .  cat指令"></a><strong>9 .  cat指令</strong></h3><blockquote>
+<p>作用：直接打开文件     <br><br>语法：#cat  要打开的文件路径  <br><br>#cat /root/linux.txt<br><br>cat指令可以将多个文件合并:</p>
+</blockquote>
+<p>#cat 要合并的文件路径1 要合并的文件路径2 文件路径n &gt; 合并之后的文件路径</p>
 </li>
 </ul>
 
