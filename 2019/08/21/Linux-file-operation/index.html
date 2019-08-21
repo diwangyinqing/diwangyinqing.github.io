@@ -174,34 +174,39 @@
 </blockquote>
 <ul>
 <li><h3 id="1-cat指令"><a href="#1-cat指令" class="headerlink" title="1 .  cat指令"></a><strong>1 .  cat指令</strong></h3><blockquote>
-<p>作用：直接打开文件     <br><br>语法：#cat  要打开的文件路径  <br><br>#cat /root/linux.txt<br><br>cat指令可以将多个文件合并:</p>
+<p>作用：直接打开文件     <br><br>语法：#cat  要打开的文件路径  <br><br>#cat /root/linux.txt<br><br>cat指令可以将多个文件合并:<br>#cat 要合并的文件路径1 要合并的文件路径2 文件路径n &gt; 合并之后的文件路径</p>
 </blockquote>
-#cat 要合并的文件路径1 要合并的文件路径2 文件路径n &gt; 合并之后的文件路径</li>
+</li>
 </ul>
 <ul>
 <li><h3 id="2-head指令"><a href="#2-head指令" class="headerlink" title="2 .  head指令"></a><strong>2 .  head指令</strong></h3><blockquote>
 <p>作用：查看文件的前n行 如果不指定n默认前10行     <br><br>语法：#head -n  文件路径  （n表示数字） <br><br>#head -15 /root/linux.txt<br></p>
 </blockquote>
+</li>
+</ul>
 <ul>
 <li><h3 id="3-less指令"><a href="#3-less指令" class="headerlink" title="3 .  less指令"></a><strong>3 .  less指令</strong></h3><blockquote>
 <p>作用：查看文件，可以用辅助键向前或向后翻页（用PageUp键向上翻页，用PageDown键向下翻页。要退出less程序，应按Q键）   <br><br>语法：#less   文件路径  <br><br>#less /root/linux.txt<br><br>注：Q键退出</p>
 </blockquote>
 </li>
+</ul>
+<ul>
 <li><h3 id="4-tail指令"><a href="#4-tail指令" class="headerlink" title="4 .  tail指令"></a><strong>4 .  tail指令</strong></h3><blockquote>
 <p>作用：查看文件的后n行 如果不指定n默认后10行     <br><br>语法：#tail -n  文件路径  （n表示数字）  <br><br>#tail -15 /root/linux.txt<br></p>
 </blockquote>
 </li>
+</ul>
+<ul>
 <li><h3 id="5-vim指令"><a href="#5-vim指令" class="headerlink" title="5 .  vim指令"></a><strong>5 .  vim指令</strong></h3><blockquote>
 <p>作用  打开文件（vim是文本编辑器）     <br><br>语法：#vim 文件路径  （文件不存在时系统自动创建）  <br><br>#vim /root/linux123.txt<br>退出方式：在没有输入其他指令时 按住shift键+冒号键（英文模式）后输入q按回车键退出</p>
 </blockquote>
 </li>
-<li><h3 id="6-wc指令"><a href="#6-wc指令" class="headerlink" title="6 .  wc指令"></a><strong>6 .  wc指令</strong></h3><blockquote>
-<p>作用：统计文件信息 （包含单词数、行数、字节数）     <br><br>语法：#wc -lwc 需要统计文件信息的文件路径  <br><br>选项：1.-l 表示lines，行数<br></p>
-</blockquote>
-</li>
 </ul>
-<p>2.-c 表示bytes，字节数 <br><br>3.-w 表示words，单词数   依照空格来判断单词数量 <br><br>#wc -lwc /root/linux123.txt</p>
-</li>
+<ul>
+<li><h3 id="6-wc指令"><a href="#6-wc指令" class="headerlink" title="6 .  wc指令"></a><strong>6 .  wc指令</strong></h3><blockquote>
+<p>作用：统计文件信息 （包含单词数、行数、字节数）     <br><br>语法：#wc -lwc 需要统计文件信息的文件路径  <br><br>选项：1.-l 表示lines，行数<br><br>2.-c 表示bytes，字节数 <br><br>3.-w 表示words，单词数   依照空格来判断单词数量 <br></p>
+</blockquote>
+#wc -lwc /root/linux123.txt</li>
 </ul>
 
       
