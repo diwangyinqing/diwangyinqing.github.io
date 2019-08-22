@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>Hexo</title>
+  <title>Linux常用指令 | Hexo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <link rel="manifest" href="/manifest.json">
@@ -112,9 +112,9 @@
   	
   	
     
+          
       
       
-         
         
     
     
@@ -139,7 +139,7 @@
   		
   	
   	
-  	1分钟以前发布
+  	9分钟以前发布
 
 
   
@@ -155,22 +155,33 @@
   <div class="article-inner">
    
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Linux常用指令
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="title-linux常用指令"><a href="#title-linux常用指令" class="headerlink" title="title:linux常用指令"></a>title:linux常用指令</h2><center><font face="微软雅黑" color="red" size="20">  Linux  </font><font size="5">常用指令</font><p></p></center>
+        <center><font face="微软雅黑" color="red" size="20">  Linux  </font><font size="5">常用指令</font><p></p></center>
 
 <blockquote>
 <p>1.date指令<br><br>2.cal指令<br><br>3.clear指令<br><br>4.hostname指令<br><br>5.df指令<br><br>6.free指令<br><br>7.uptime指令<br><br>8.id指令<br><br>9.管道符（|）<br><br>10.find指令<br><br>11.man指令<br></p>
+</blockquote>
+<hr>
 <ul>
-<li><h3 id="1-date指令"><a href="#1-date指令" class="headerlink" title="1 .  date指令"></a><strong>1 .  date指令</strong></h3>作用：输出或设置时间 <br><br>语法：<br><blockquote>
+<li><h3 id="1-date指令"><a href="#1-date指令" class="headerlink" title="1 .  date指令"></a><strong>1 .  date指令</strong></h3><blockquote>
+<p>作用：输出或设置时间 <br><br>语法：<br></p>
+<blockquote>
 <p>1.#date<br>    </p>
 <blockquote>
 <p>输出形式：2019年 08月 22日 星期四 11:31:57 CST<br></p>
 </blockquote>
 </blockquote>
-</li>
-</ul>
 <blockquote>
 <p>2.#date  +%F  （等价于#date  “+%Y-%m-%d” ）<br></p>
 <blockquote>
@@ -186,7 +197,7 @@
 <blockquote>
 <p>4.#date -d  “-1 day”  “+%Y-%m-%d %H:%M:%S” <br><br>作用：获得之前之后的某天</p>
 <blockquote>
-<p>  符号的可选值：+（之后） 或者 - （之前）<br><br>   单位的可选值：day（天）、month（月份）、year（年）</p>
+<p>  符号的可选值：+（之后） 或者 - （之前）<br><br>单位的可选值：day（天）、month（月份）、year（年）</p>
 </blockquote>
 </blockquote>
 <blockquote>
@@ -196,6 +207,8 @@
 <p>其他参数：<br><br>%H 小时，24小时制（00<del>23）<br><br>%I 小时，12小时制（01</del>12）<br><br>%k 小时，24小时制（0<del>23）<br><br>%l 小时，12小时制（1</del>12）<br><br>%M 分钟（00<del>59）<br><br>%r 显示时间，12小时制（hh:mm:ss %p）<br><br>%s 从1970年1月1日00:00:00到目前经历的秒数<br><br>%S 显示秒（00</del>59）<br><br>%T 显示时间，24小时制（hh:mm:ss）<br><br>%X 显示时间的格式（%H:%M:%S）<br><br>%Z 显示时区，日期域（CST）<br><br>%a 星期的简称（Sun<del>Sat）<br><br>%A 星期的全称（Sunday</del>Saturday）<br><br>%h,%b 月的简称（Jan<del>Dec）<br><br>%B 月的全称（January</del>December）<br><br>%c 日期和时间（Tue Nov 20 14:12:58 2012）<br><br>%d 一个月的第几天（01<del>31）<br><br>%x,%D 日期（mm/dd/yy）<br><br>%j 一年的第几天（001</del>366）<br><br>%m 月份（01<del>12）<br><br>%w 一个星期的第几天（0代表星期天）<br><br>%W 一年的第几个星期（00</del>53，星期一为第一天）<br></p>
 </blockquote>
 </blockquote>
+</li>
+</ul>
 <ul>
 <li><h3 id="2-cal指令"><a href="#2-cal指令" class="headerlink" title="2 .  cal指令"></a><strong>2 .  cal指令</strong></h3><blockquote>
 <p>作用：输出日历     <br><br>语法：<br></p>
@@ -258,6 +271,8 @@
 <li><h3 id="7-uptime指令"><a href="#7-uptime指令" class="headerlink" title="7 .  uptime指令"></a><strong>7 .  uptime指令</strong></h3><blockquote>
 <p>作用：输出系统从开机到现在运行了多长时间   <br><br>语法：#uptime <br></p>
 </blockquote>
+</li>
+</ul>
 <ul>
 <li><h3 id="8-id指令"><a href="#8-id指令" class="headerlink" title="8 .  id指令"></a><strong>8 .  id指令</strong></h3><blockquote>
 <p>作用：查看某个用户的一些基本信息（包含用户id，用户组id，附加组id），该指令如果不指定用户则默认当前用户<br><br>语法：</p>
@@ -270,6 +285,8 @@
 </blockquote>
 </blockquote>
 </li>
+</ul>
+<ul>
 <li><h3 id="9-管道"><a href="#9-管道" class="headerlink" title="9 .管道(|)"></a><strong>9 .管道(|)</strong></h3><blockquote>
 <p>作用: 将某个命令的输出的结果输出结果传到另一命令中     <br><br>用法：</p>
 <blockquote>
@@ -284,6 +301,8 @@
 </blockquote>
 </blockquote>
 </li>
+</ul>
+<ul>
 <li><h3 id="10-find-指令"><a href="#10-find-指令" class="headerlink" title="10 .find 指令"></a><strong>10 .find 指令</strong></h3><blockquote>
 <p>作用：用来在指定目录下查找文件    <br><br>语法 #find 查询路径 查询方式  查询内容</p>
 <blockquote>
@@ -309,8 +328,6 @@
 </blockquote>
 </blockquote>
 </blockquote>
-</li>
-</ul>
 </li>
 </ul>
 <ul>
