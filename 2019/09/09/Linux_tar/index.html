@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="utf-8">
   
-  <title>关于文件操作的指令 | Hexo</title>
+  <title>解压与压缩操作 | Hexo</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <link rel="manifest" href="/manifest.json">
@@ -105,7 +105,7 @@
     <!--采用相对的时间或者绝对的时间，默认相对-->
 
 <div class="article-date">
-  	<time datetime="2019-08-21T10:14:18.951Z" itemprop="datePublished">
+  	<time datetime="2019-09-09T13:18:36.443Z" itemprop="datePublished">
   	
   	
   	
@@ -139,7 +139,7 @@
   		
   	
   	
-  	20天以前发布
+  	18小时以前发布
 
 
   
@@ -159,7 +159,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      关于文件操作的指令
+      解压与压缩操作
     </h1>
   
 
@@ -167,47 +167,58 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <center><font face="微软雅黑" color="red" size="20">  Linux  </font><font size="5">关于文件操作的指令</font><p></p></center>
+        <center><font face="微软雅黑" color="red" size="20">  Linux  </font><font size="5">关于解压与压缩操作</font><p></p></center>
 
+
+
+<h1 id="一-tar指令的概述"><a href="#一-tar指令的概述" class="headerlink" title="一 .  tar指令的概述 "></a><strong>一 .  tar指令的概述</strong> <br></h1><p>tar命令可以为linux的文件和目录创建备份。利用tar，可以为某一特定文件创建备份文件，也可以在备份中改变文件，或者向备份中加入新的文件。tar最初被用来在磁带上创建备份，现在，用户可以在任何设备上创建备份。利用tar命令，可以把一大堆的文件和目录全部打包成一个文件，这对于备份文件或将几个文件组合成为一个文件以便于网络传输是非常有用的。</p>
+<hr>
+
+<h1 id="二-打包与压缩"><a href="#二-打包与压缩" class="headerlink" title="二 .  打包与压缩 "></a><strong>二 .  打包与压缩</strong> <br></h1><h3 id="打包是指将一大堆文件或目录变成一个总的文件"><a href="#打包是指将一大堆文件或目录变成一个总的文件" class="headerlink" title="打包是指将一大堆文件或目录变成一个总的文件"></a>打包是指将一大堆文件或目录变成一个总的文件<br></h3><h3 id="压缩则是将一个大的文件通过一些压缩算法变成一个小文件。"><a href="#压缩则是将一个大的文件通过一些压缩算法变成一个小文件。" class="headerlink" title="压缩则是将一个大的文件通过一些压缩算法变成一个小文件。"></a>压缩则是将一个大的文件通过一些压缩算法变成一个小文件。</h3><ul>
+<li><h3 id="1-tar指令"><a href="#1-tar指令" class="headerlink" title="1 .  tar指令"></a><strong>1 .  tar指令</strong></h3><blockquote>
+<p>作用 ：解压或压缩文件<br><br>选项 ： </p>
 <blockquote>
-<p>1.cat指令<br><br>2.head指令<br><br>3.less指令<br><br>4.tail指令<br><br>5.vim指令<br><br>6.wc指令</p>
+<p>-v：显示操作过程；<br><br>-f:指定备份文件；<br><br>-c:建立新的备份文件；<br><br>-z:通过gzip指令处理备份文件；<br><br>-j：支持bzip2解压文件<br></p>
 </blockquote>
-<ul>
-<li><h3 id="1-cat指令"><a href="#1-cat指令" class="headerlink" title="1 .  cat指令"></a><strong>1 .  cat指令</strong></h3><blockquote>
-<p>作用：直接打开文件     <br><br>语法：#cat  要打开的文件路径  <br><br>#cat /root/linux.txt<br><br>cat指令可以将多个文件合并:<br>#cat 要合并的文件路径1 要合并的文件路径2 文件路径n &gt; 合并之后的文件路径</p>
 </blockquote>
 </li>
 </ul>
-<ul>
-<li><h3 id="2-head指令"><a href="#2-head指令" class="headerlink" title="2 .  head指令"></a><strong>2 .  head指令</strong></h3><blockquote>
-<p>作用：查看文件的前n行 如果不指定n默认前10行     <br><br>语法：#head -n  文件路径  （n表示数字） <br><br>#head -15 /root/linux.txt<br></p>
+<blockquote>
+<p>压缩操作：</p>
+<blockquote>
+<p>1 .gzip的方式压缩<br><br>用法：tar -czvf [压缩包保存位置]/filename（压缩包名）.tar.gz 被压缩文件的位置</p>
+<blockquote>
+<p>例：#tar -czvf /root/yasuo.tar.gz /boot/aqw</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><h3 id="3-less指令"><a href="#3-less指令" class="headerlink" title="3 .  less指令"></a><strong>3 .  less指令</strong></h3><blockquote>
-<p>作用：查看文件，可以用辅助键向前或向后翻页（用PageUp键向上翻页，用PageDown键向下翻页。要退出less程序，应按Q键）   <br><br>语法：#less   文件路径  <br><br>#less /root/linux.txt<br><br>注：Q键退出</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><h3 id="4-tail指令"><a href="#4-tail指令" class="headerlink" title="4 .  tail指令"></a><strong>4 .  tail指令</strong></h3><blockquote>
-<p>作用：查看文件的后n行 如果不指定n默认后10行     <br><br>语法：#tail -n  文件路径  （n表示数字）  <br><br>#tail -15 /root/linux.txt<br></p>
+<blockquote>
+<p>2 .bzip2的方式压缩<br><br>tar -cjvf [压缩包保存位置]/filename（压缩包名）.tar.bz2 被压缩文件的位置<br></p>
+<blockquote>
+<p>例：#tar -cjvf /root/yasuo.tar.gz /boot/aqw<br></p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><h3 id="5-vim指令"><a href="#5-vim指令" class="headerlink" title="5 .  vim指令"></a><strong>5 .  vim指令</strong></h3><blockquote>
-<p>作用  打开文件（vim是文本编辑器）     <br><br>语法：#vim 文件路径  （文件不存在时系统自动创建）  <br><br>#vim /root/linux123.txt<br>退出方式：在没有输入其他指令时 按住shift键+冒号键（英文模式）后输入q按回车键退出</p>
 </blockquote>
-</li>
-</ul>
-<ul>
-<li><h3 id="6-wc指令"><a href="#6-wc指令" class="headerlink" title="6 .  wc指令"></a><strong>6 .  wc指令</strong></h3><blockquote>
-<p>作用：统计文件信息 （包含单词数、行数、字节数）     <br><br>语法：#wc -lwc 需要统计文件信息的文件路径  <br><br>选项：1.-l 表示lines，行数<br><br>2.-c 表示bytes，字节数 <br><br>3.-w 表示words，单词数   依照空格来判断单词数量 <br></p>
+<p>解压操作：</p>
+<blockquote>
+<p>1.gzip的压缩包的解压</p>
+<blockquote>
+<p>#tar -xzvf [压缩包保存位置]/filename（压缩包名）.tar.gz -C(大写的c) 解压到的位置<br><br>例： #tar -xzvf qwer.tar.gz -C /root<br><br>注：若用户在需要解压的压缩包的目录下可省略压缩包的保存路径</p>
 </blockquote>
-#wc -lwc /root/linux123.txt</li>
-</ul>
+<p>2..bzip2的压缩包的解压</p>
+<blockquote>
+<p>#tar -xjvf [压缩包保存位置]/filename（压缩包名）.tar.bz2 -C(大写的c) 解压到的位置</p>
+<p>#tar -xjvf qwer.tar.bz2 -C /root<br><br>注：若用户在需要解压的压缩包的目录下可省略压缩包的保存路径</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>打包操作：</p>
+<blockquote>
+<p>用法：tar -cvf [打包保存位置]/filename（包名）.tar 被打包文件的位置</p>
+<blockquote>
+<p>例：#tar -cvf /root/yasuo.tar /boot/aqw</p>
+</blockquote>
+</blockquote>
+</blockquote>
 
       
     </div>
@@ -240,7 +251,7 @@
 
 <div class="copyright">
 <blockquote>
-<strong>本文链接</strong>:  <a href= "http://yoursite.com/2019/08/21/Linux-file-operation/" href="_blank" > http://yoursite.com/2019/08/21/Linux-file-operation/ </a>
+<strong>本文链接</strong>:  <a href= "http://yoursite.com/2019/09/09/Linux_tar/" href="_blank" > http://yoursite.com/2019/09/09/Linux_tar/ </a>
 <div>
 <strong>版权声明</strong>:本博客所有文章除特别声明外，均采用<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" target="_blank" >CC BY-NC-SA 3.0 CN许可协议</a>进行许可。转载请注明出处！
 </div>
@@ -270,19 +281,10 @@
     
 <nav id="article-nav">
   
-    <a href="/2019/08/22/Linux-frequent -instruction/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">上一篇</strong>
-      <div class="article-nav-title">
-        
-          Linux常用指令
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/08/21/Untitled-1/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2019/08/24/linux-vim/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">vim编辑器</div>
     </a>
   
 </nav>
